@@ -26,6 +26,3 @@ Do add a Cart.json into the root folder. This can follow the below given format 
 2. Setup Mongo DB interface to represent a complete MEAN shopping cart.
 <br>
 3. Setup Browse Experience and redesign the theme of the app.
-
-
-The app should automatically open up in default browser
