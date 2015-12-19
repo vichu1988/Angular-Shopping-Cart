@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My cart</title>
+    <link href="/src/script/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/styles/cart.css">
+</head>
+<body>
+<article ng-app="cartApp" class="container-fluid">
+    <div class="row">HEADER COMP</div>
+    <section class="row clearfix">
+        <article class="col-xs-8 col-md-9 container" ui-view="Items">
+        </article>
+        <article class="col-xs-offset-1 col-xs-3 col-md-offset-1 col-md-2 container" ui-view="Basket">
+        </article>
+    </section>
+    <footer class="row">
+        FOOTER COMP
+    </footer>
+</article>
+<script src="/src/script/libs/jquery/dist/jquery.min.js"></script>
+<script src="/src/script/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/src/script/libs/angular/angular.min.js"></script>
+<script src="/src/script/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="/src/script/main.js"></script>
+</body>
+</html>

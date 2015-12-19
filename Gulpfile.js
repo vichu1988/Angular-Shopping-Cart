@@ -18,17 +18,17 @@ gulp.task('dist', function () {
         .pipe(gulp.dest('dist'));
 });
 // Static server
-gulp.task('browser-sync', function () {
+/*gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
             baseDir: "./",
-            index: "main.html"
+ index: "main.templates"
         }
     });
-});
+ });*/
 
-gulp.watch(['src/**/*.*', './*.html'], reload);//.watch("src/*.html").on("change", browserSync.reload);
-gulp.task('default', ['browser-sync']);
+gulp.watch(['src/**/*.*', './*.html'], reload);//.watch("src/*.templates").on("change", browserSync.reload);
+gulp.task('default', ['jshint']);//'browser-sync',
 //
 //gulp.task('scripts-bfy', function () {
 //    return browserify({
@@ -42,7 +42,7 @@ gulp.task('default', ['browser-sync']);
 
 // jshint files
 gulp.task('jshint', function () {
-    gulp.src(['/build/final.js'])
+    gulp.src(['/src/script/main.js'])
         .pipe(jshint())
         .pipe(jshint.reporter());
 });

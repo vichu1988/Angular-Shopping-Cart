@@ -5,11 +5,11 @@ npm install
 
 #Running the App
 
-Open a terminal/command prompt and run the following in seperate windows.
+Open a terminal/command prompt and run the following in separate windows.
 <br>
 1.npm start
 <br>
-2.gulp
+Check localhost:9000/ in any browser.
 
 This should open the window in the default browser.
 

@@ -4,8 +4,8 @@
 var express = require('express'),
     router = express.Router();
 /* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('products');
+router.get('/', function (req, res) {
+    res.render('main');
 });
 
 module.exports = router;
