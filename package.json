@@ -1,0 +1,32 @@
+{
+  "name": "angular-shopping-cart",
+  "version": "0.0.1",
+  "description": "Angular app as react kinda went south!",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ./bin/www"
+  },
+  "keywords": [
+    "Angular"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "body-parser": "^1.14.2",
+    "browser-sync": "^2.10.1",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-zip": "^3.0.2",
+    "hbs": "^4.0.0",
+    "jshint": "^2.8.0",
+    "less-middleware": "^2.0.1",
+    "morgan": "^1.6.1",
+    "serve-favicon": "^2.3.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
