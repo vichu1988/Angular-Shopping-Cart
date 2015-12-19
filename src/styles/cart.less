@@ -1,0 +1,78 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0 20px;
+  color: #000;
+  background: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.militia{
+  height:600px;
+  display: inline-block;
+}
+
+.cart {
+  &header {
+    background: #1062b5;
+    height: 20%;
+  }
+  &footer {
+    background: #000;
+    height: 20%;
+  }
+  &content {
+    background: #330000;
+    height: 60%;
+  }
+  &-tile {
+    &-image {
+      display: block;
+      height: 337px;
+    }
+
+  }
+  &-border{
+    border: 1px solid black;
+  }
+  &-bottom {
+    &-margin {
+      margin-bottom: 20px;
+    }
+  }
+  &basket {
+    position: absolute;
+  }
+  &shoplogo {
+    float: left;
+  }
+}
+
+.logo {
+  width: inherit;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  margin-left: -15px;
+  border-radius: 5% 0 0 5%;;
+}
+
+.transparent {
+  background: transparent;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}

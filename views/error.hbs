@@ -1,0 +1,6 @@
+<h1 class="alert alert-warning ">{{message}}</h1>
+<h2>
+    <label for="error" class="text-info font-lg">Error Reason :</label>
+    <button class="btn btn-warning" role="button" data-toggle="collapse" data-target="#error">{{error.status}}</button>
+</h2>
+<pre class="collapse" id="error">{{error.stack}}</pre>
