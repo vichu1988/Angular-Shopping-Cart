@@ -1,6 +1,7 @@
 /**
  * Created by vsury1 on 12/17/15.
  */
+
 angular.module('cartApp', ['ui.router'])
     .config(configFn)
     .service('cartService', cartService)
@@ -11,7 +12,7 @@ angular.module('cartApp', ['ui.router'])
 configFn.$injector = ['$stateProvider', '$urlRouterProvider'];
 basketController.$injector = ['cartService', '$scope'];
 itemController.$injector = ['cartService'];
-cartService.$injector = ['$http', '$log'];
+cartService.$injector = ['$http'];
 
 function configFn($stateProvider, $urlRouterProvider) {
 
@@ -70,7 +71,7 @@ function itemController(cartService) {
     };
 }
 
-function cartService($http, $log) {
+function cartService($http) {
     "use strict";
     var products = [];
 

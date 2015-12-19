@@ -1,0 +1,10 @@
+{
+  "name": "angular-shopping-cart",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-ui-router": "latest",
+    "jquery": "latest"
+  }
+}

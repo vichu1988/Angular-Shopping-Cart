@@ -1,10 +1,16 @@
 #Installation Step
+Open a terminal/Command Prompt window and run the following command.
 
 npm install
 
 #Running the App
 
-npm start & gulp
+Open a terminal/command prompt and run the following in seperate windows.
+1.npm start
+2.gulp
+
+This should open the window in the default browser.
+
 
 #Data Setup
 

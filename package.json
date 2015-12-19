@@ -5,22 +5,23 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
+    "postinstall": "bower install",
     "start": "node ./bin/www"
   },
   "keywords": [
     "Angular"
   ],
-  "author": "Me",
+  "author": "Visweshwaran S",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.4.8",
     "body-parser": "^1.14.2",
+    "bower": "^1.7.1",
     "browser-sync": "^2.10.1",
     "cookie-parser": "^1.4.0",
     "debug": "^2.2.0",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
-    "gulp-jshint": "^2.0.0",
+    "gulp-jshint": "^2clear.0.0",
     "gulp-zip": "^3.0.2",
     "hbs": "^4.0.0",
     "jshint": "^2.8.0",
