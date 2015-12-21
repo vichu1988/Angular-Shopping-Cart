@@ -83,7 +83,7 @@ function cartService($http) {
 
     function getProducts() {
         return $http({
-            url: '//localhost:9000/products',
+            url: '//localhost:9001/products',
             method: 'GET',
             cache: 'false'
         });
