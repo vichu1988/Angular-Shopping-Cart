@@ -85,7 +85,6 @@ function cartService($http) {
         return $http({
             url: '//localhost:9000/products',
             method: 'GET',
-            params: {callback: 'JSON_CALLBACK'},
             cache: 'false'
         });
     }

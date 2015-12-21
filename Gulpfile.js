@@ -27,7 +27,7 @@ gulp.task('dist', function () {
     });
  });*/
 
-gulp.watch(['src/**/*.*', './*.html'], reload);//.watch("src/*.templates").on("change", browserSync.reload);
+gulp.watch(['src/**/*.*', './views/*.*'], reload);//.watch("src/*.templates").on("change", browserSync.reload);
 gulp.task('default', ['jshint']);//'browser-sync',
 //
 //gulp.task('scripts-bfy', function () {
