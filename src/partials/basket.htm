@@ -1,0 +1,13 @@
+<section class="row">
+    <h3>
+        <span class="glyphicon glyphicon-shopping-cart"> &nbsp; Basket</span>
+    </h3>
+    <ul>
+        <li ng-repeat="prod in basketC.products">
+            <div ng-if="prod.BasketQty > 0 ">{{prod.Name}} : {{prod.BasketQty}}
+                <span ng-click="prod.BasketQty = 0"
+                      class="btn btn-link">Close</span>
+            </div>
+        </li>
+    </ul>
+</section>

@@ -22,12 +22,12 @@ function configFn($stateProvider, $urlRouterProvider) {
         url: '/cartApp',
         views: {
             "Items": {
-                templateUrl: './src/templates/items.html',
+                templateUrl: './src/partials/items.htm',
                 controller: 'itemController',
                 controllerAs: 'itemC'
             },
             "Basket": {
-                templateUrl: './src/templates/basket.html',
+                templateUrl: './src/partials/basket.htm',
                 controller: 'basketController',
                 controllerAs: 'basketC'
             }

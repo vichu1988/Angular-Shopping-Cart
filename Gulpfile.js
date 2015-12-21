@@ -22,12 +22,12 @@ gulp.task('dist', function () {
     browserSync.init({
         server: {
             baseDir: "./",
- index: "main.templates"
+ index: "main.partials"
         }
     });
  });*/
 
-gulp.watch(['src/**/*.*', './views/*.*'], reload);//.watch("src/*.templates").on("change", browserSync.reload);
+gulp.watch(['src/**/*.*', './views/*.*'], reload);//.watch("src/*.partials").on("change", browserSync.reload);
 gulp.task('default', ['jshint']);//'browser-sync',
 //
 //gulp.task('scripts-bfy', function () {

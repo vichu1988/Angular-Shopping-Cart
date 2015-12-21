@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<div class="row pull-right">
+    <select ng-model="itemC.sortBase">
+        <option ng-selected="true" value="'Name'">Alphabetically A-Z</option>
+        <option value="'-Name'">Alphabetically Z-A</option>
+        <option value="'Price'">Price Low-High</option>
+        <option value="'-Price'">Price High-Low</option>
+    </select>
+</div>
+<ul class="well row">
+    <li ng-repeat="prod in itemC.products|orderBy:itemC.sortBase track by $index" data-product-id="{{prod.Id}}"
+        class="col-sm-6 col-md-3 clearfix borders cart-bottom-margin cart-border militia">
+        <div class="desc">
+            <img ng-src="{{prod.Image}}" height="110" width="110" alt=""
+                 title="{{prod.Name}}" class="center"/>
+            <h4>
+                <span data-title="true">{{prod.Name}}</span>
+            </h4>
+        </div>
+        <span ng-if="prod.IsFavourite" class="glyphicon glyphicon-heart"></span>
+        <div class="content addToBasket">
+            <p class="price">
+                <span class="linePrice">{{prod.Price | currency:"£ "}}</span>
+                <br>
+                <span class="linePriceAbbr">{{prod.UnitPrice | currency:"£ "}}/{{prod.unitType}}</span>
+            </p>
+            <h4>Add to basket</h4>
+            <label>Quantity</label>
+            <br/>
+            <button data-product-id={{prod.Id}}
+                    class="button button-small glyphicon glyphicon-minus"
+                    title="Decrease quantity"
+                    ng-click="itemC.updateQty(prod.Id,false)"
+                    ng-disabled="!prod.BasketQty"></button>
+            <input type="number" ng-model="prod.BasketQty"
+                   class="textbox quantity"
+                   maxLength="4"/>
+            <button class="button button-small glyphicon glyphicon-plus blue"
+                    title="Increase quantity"
+                    ng-click="itemC.updateQty(prod.Id,true)">
+            </button>
+            <br>
+            <br>
+            <ul ng-if="prod.Promotions.length" class="allMessages well">
+                <li ng-repeat="promotion in prod.Promotions">
+                    <span class="text text-danger">{{promotion.Type}}</span>
+                    <br>
+                    <span class="text text-info">{{promotion.Description}}</span>
+                </li>
+            </ul>
+            <p class="productStatus"></p>
+        </div>
+    </li>
+</ul>
